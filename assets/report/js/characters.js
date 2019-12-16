@@ -304,7 +304,7 @@ class Character {
     let card = document.getElementById("body-card");
     card.innerHTML = `
       <div class="body-card-top-row">
-          <div class="body-character-image" style="background-image: url('/images/${
+          <div class="body-character-image" style="background-image: url('/report/report/images/${
             character.image_path
           }')">
   
@@ -357,7 +357,7 @@ class Character {
           ${character.connected_to
             .map(index => {
               return `
-              <div onmousemove="openRelationBox(event, '${char_index}', '${index}')" onmouseout="closeRelationBox()" class="connection-circle" style="background-image: url('/images/${characters[index].image_path}')" onclick="characterSwitch(${index})">
+              <div onmousemove="openRelationBox(event, '${char_index}', '${index}')" onmouseout="closeRelationBox()" class="connection-circle" style="background-image: url('/report/report/images/${characters[index].image_path}')" onclick="characterSwitch(${index})">
                   <div class="connection-circle-name">
                       ${characters[index].name}
                   </div>
@@ -395,7 +395,7 @@ class Character {
     card.setAttribute("onclick", `characterSwitch(${index})`);
     card.innerHTML = `
       <div class="top-row">
-          <div class="character-image" style="background-image: url('/images/${character.image_path}')">
+          <div class="character-image" style="background-image: url('/report/images/${character.image_path}')">
   
           </div>
           <div class="character-name">
