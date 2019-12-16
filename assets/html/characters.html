@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English 12</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="/js/characters.js"></script>
+    <link rel="stylesheet" href="/css/characters.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="body-card" id="body-card">
+            <div class="body-card-top-row">
+                <div class="body-character-image" style="background-image: url('wiston_smith.jpg')">
+
+                </div>
+                <div class="body-character-name">
+                    Wiston Smith
+                </div>
+                <div class="body-character-title">
+                    Protagonist
+                </div>
+            </div>
+            <div class="body-content-container">
+                <div class="body-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero diam, elementum a egestas
+                        at,
+                        lobortis
+                        ac turpis. Etiam interdum accumsan ante, vitae semper turpis facilisis id. Duis accumsan nibh a
+                        neque
+                        feugiat condimentum. Maecenas efficitur rhoncus odio vel convallis. Fusce in orci gravida,
+                        dictum
+                        lacus
+                        congue, volutpat enim. Proin a egestas nisl.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero diam, elementum a egestas
+                        at,
+                        lobortis
+                        ac turpis. Etiam interdum accumsan ante, vitae semper turpis facilisis id. Duis accumsan nibh a
+                        neque
+                        feugiat condimentum. Maecenas efficitur rhoncus odio vel convallis. Fusce in orci gravida,
+                        dictum
+                        lacus
+                        congue, volutpat enim. Proin a egestas nisl.
+                    </p>
+
+                </div>
+                <div class="body-footer-connected">
+                    Connected To
+                </div>
+                <div class="body-footer">
+                    <div class="connection-circle">
+                        <div class="connection-circle-name">
+                            Wiston Smith
+                        </div>
+                    </div>
+                    <div class="connection-circle">
+                        <div class="connection-circle-name">
+                            Wiston Smith
+                        </div>
+                    </div>
+                    <div class="connection-circle">
+                        <div class="connection-circle-name">
+                            Wiston Smith
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="overlay-button" onclick="start()">
+            START
+        </div>
+    </div>
+    <div class="relation-box" id="relation-box">
+        RELATION!!!!!
+    </div>
+</body>
+
+<script>
+    function openFullscreen(elem) {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+    function start() {
+        let element = document.body;
+
+        let overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+
+        characterSwitch(0);
+
+        openFullscreen(element);
+    }
+</script>
+
+</html>
